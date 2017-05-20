@@ -8,7 +8,6 @@ using Microsoft.Win32;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography.Pkcs;
@@ -362,7 +361,6 @@ namespace ittru
 
                         case 1:
                             throw new Exception("unsupported algorithm");
-                            break;
 
                         case 2:
                             hash = new SHA256Managed();
